@@ -1,10 +1,10 @@
-const router = require('express').Router()
+const router = require("express").Router();
 
-const movieServices = require('./movies.services')
+const moviesServices = require("./movies.services");
 
-router.get('/movies', movieServices.getAllMovies)
-router.post('/movies', movieServices.postNewMovie)
+router.get("/movies", moviesServices.getAllMovies);
+router.post("/movies", moviesServices.postNewMovie);
 
-router.get('/movies/:id', movieServices.getMovieById)
+router.get("/movies/:id", moviesServices.getMovieById);
 
-module.exports= router
+module.exports = router;
