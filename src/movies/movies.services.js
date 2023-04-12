@@ -20,7 +20,7 @@ const getMovieById = (req, res) => {
 
         .then((data) => {
             if (!data) {
-                return res.status(404).json({ message: "Book not found" });
+                return res.status(404).json({ message: "Movie not found" });
             }
 
             res.status(200).json(data);
